@@ -42,16 +42,16 @@ public class SortTest {
     }
 
     @Test
-    public void insertionSortSmallInputSize() {
+    public void selectionSortSmallInputSize() {
         int[] array = new int[]{5, 7, 2, 1, 8, 3, 7, 22, 15, 13, 1, 9};
-        int[] sorted = InsertionSort.sort(array);
+        int[] sorted = SelectionSort.sort(array);
 
         assertTrue(isSorted(sorted));
     }
 
     @Test
-    public void insertionSortLargeInputSize() {
-        int[] sorted = InsertionSort.sort(getLargeArray(100_000));
+    public void selectionSortLargeInputSize() {
+        int[] sorted = SelectionSort.sort(getLargeArray(100_000));
 
         assertTrue(isSorted(sorted));
     }

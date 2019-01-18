@@ -1,6 +1,6 @@
 package sort;
 
-public class InsertionSort {
+public class SelectionSort {
     public static int[] sort(int[] array) {
         int start = 0;
         while (start != array.length - 1) {
